@@ -111,9 +111,13 @@ if(!function_exists('MusaFetch_404_QueryStringToEmail_Admin')){
                     </head>
                     <body style="font-family:sans-serif; font-size:14px;">
                         <p style="margin: 20px auto;">
-                            Hello Admin,<br>
-                            Some Just visited on your this ,<i>'.$this->siteURL.'</i> and visitor search about this <b>'.$this->queryString.'</b> Keyword. A 404 Error means, your site have no keyword like this. Please
-                            If this keyword related to your website context then keep note. Have a look on full details about this below.
+                            Hi This is 404 Not Found Error Keeper,<br>
+                            Just Few While Ago Someone try to search something on your <i>'.$this->siteURL.'</i> this site.
+                            And I Found <b>404 Not Found Error</b> According to this Keyword  <b>'.$this->queryString.'</b>.
+                            Please Check this Keyword like =" or "=" ,1=1 this SQL Injection ,then Improve your site security.
+                            OR Keyword is match on your website context then improve your content.
+
+                            Have a look on full details about this below.
                         </p>
                        <table  border="1" style="color:#333333;width:100%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;">
                             <tr style="background-color:#ffffff;">
@@ -145,7 +149,7 @@ if(!function_exists('MusaFetch_404_QueryStringToEmail_Admin')){
                             </tr>
                         </table>
                         <p style="margin: 20px auto;">
-                           <button style="background-color:#ffffff; padding: 8px;color:#fff"><a href="mailto:musa01717@gmail.com">Donate!</a></button>
+                           Some Text here....
                         </p>
                     </body>
                 </html>';
