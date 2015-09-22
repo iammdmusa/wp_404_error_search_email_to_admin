@@ -168,9 +168,9 @@ if(!function_exists('MusaFetch_404_QueryStringToEmail_Admin')){
         public function MusaSendEmailToAdmin()
         {
             add_filter('wp_mail_content_type',create_function('', 'return "text/html"; '));
-            if($_REQUEST['s']!=''){
+            //if($_REQUEST['s']!=''){
                 wp_mail( $this->emailTo, 'Head UP Please!', $this->SendingMessagesInfo, sprintf( 'From: %s ', $this->emailHeaderInfo() ) );
-            }
+            //}
         }
     }
 }
