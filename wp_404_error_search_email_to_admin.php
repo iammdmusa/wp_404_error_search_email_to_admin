@@ -91,6 +91,7 @@ if(!function_exists('MusaFetch_404_QueryStringToEmail_Admin')){
             return $string;
         }
 
+		// Generate Email Template with regurding data
         public function Musa_generatingEmailTemplate()
         {
             $this->SendingMessagesInfo = '
@@ -156,7 +157,8 @@ if(!function_exists('MusaFetch_404_QueryStringToEmail_Admin')){
 
         }
 
-        public function emailHeaderInfo()
+		// Email Header Information
+		public function emailHeaderInfo()
         {
             return sprintf(
                 'From: %s ' . "\r\n"
@@ -165,7 +167,9 @@ if(!function_exists('MusaFetch_404_QueryStringToEmail_Admin')){
                 'no-reply@webmaster.com'
             );
         }
-        public function MusaSendEmailToAdmin()
+
+		// Email Send 
+		public function MusaSendEmailToAdmin()
         {
             add_filter('wp_mail_content_type',create_function('', 'return "text/html"; '));
             //if($_REQUEST['s']!=''){
