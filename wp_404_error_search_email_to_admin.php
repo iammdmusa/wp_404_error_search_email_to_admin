@@ -168,7 +168,7 @@ if(!function_exists('MusaFetch_404_QueryStringToEmail_Admin')){
             );
         }
 
-		// Email Send 
+		// Email Send
 		public function MusaSendEmailToAdmin()
         {
             add_filter('wp_mail_content_type',create_function('', 'return "text/html"; '));
@@ -178,6 +178,7 @@ if(!function_exists('MusaFetch_404_QueryStringToEmail_Admin')){
         }
     }
 }
+//object creatign and hook into pluglabe api.
 function Musa_Push_QueryString_Info_Admin()
 {
     return  new MusaFetch_404_QueryStringToEmail_Admin();
